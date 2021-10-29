@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "image": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/destination-1-gallery-1-img-1.jpg",
+        "name": "Cavity Protection",
+        "description": "Will help strengthen teeth and leave your mouth feeling fresh.",
+        "details": "Will help strengthen teeth and leave your mouth feeling fresh.Fluoride is a natural mineral found in Rocks, Soil, and Water. It is the 13th most abundant element in the Earth’s crust. It appears in natural ground water in varying levels,That why some places have to much and some have none. In Cities the Fluoride content of tap water is often regulated by their local Municipalities",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "image": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/destination-1-gallery-1-img-2.jpg",
+        "name": "Implant Dentistry",
+        "description": "Dental implants are the closest you can get to healthy, natural teeth.",
+        "details": "Dental implants are the closest you can get to healthy, natural teeth.We are use medication to help patients relax during dental procedures. It’s sometimes referred to as “sleep dentistry,” although that’s not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia.",
+        "price": 29.99
+    },
+    {
+        "id": 3,
+        "image": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/destination-1-gallery-1-img-3.jpg",
+        "name": "Cosmetic Dentistry",
+        "description": "Cosmetic Dentistry improve the appearance of an individual’s teeth.",
+        "details": "Cosmetic Dentistry improve the appearance of an individual’s teeth.It’s sometimes referred to as “sleep dentistry,” although that’s not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia.",
+        "price": 39.99
+    },
+    {
+        "id": 4,
+        "image": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/destination-1-gallery-2-img-1.jpg",
+        "name": "Parodontosis",
+        "description": "Timely treated parodontosis disease can save you from tooth loss.",
+        "details": "Timely treated parodontosis disease can save you from tooth loss.Dr. Jan is originally from Hilo, Hawaii. She attended dental school at the University of the Pacific in San Francisco, California and graduated with honors. Then she was accepted to do her residency at the University of Colorado in Denver. Upon completing her residency she went back to Hilo to open her first practice. She then became homesick for the mountains and purchased Yamashiro Orthodontics in Boulder to continue her career. She is excited be able to come to work everyday in such a great community and to continue making great smiles. She has now been a Premier Preferred Invisalign Provider for over 3 consecutive years and continues to strive for better ways to treat her patients.",
+        "price": 19.99
+    },
+    {
+        "id": 5,
+        "image": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/destination-1-gallery-2-img-2.jpg",
+        "name": "Dental Radiography",
+        "description": "Dental X-rays are a useful tool that help to diagnose and plan treatments.",
+        "details": "Dental X-rays are a useful tool that help to diagnose and plan treatments.The Yamashiro Orthodontics office is about 80% digital which is friendly to the environment and improves the continuity of care and communication between us and your different medical and dental providers. We have free Wi-Fi for your use in our lobby/waiting room as well as power strips for charged your devices as needed. There are also refreshments, as well as a nice tooth brushing area for you to use once you are done with your afternoon snacks.",
+        "price": 29.99
+    },
+    {
+        "id": 6,
+        "image": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/destination-1-gallery-2-img-3.jpg",
+        "name": "Crowns & Bridges",
+        "description": "We’ll design, produce and insert ceramic structure all in one single appointment.",
+        "details": "We’ll design, produce and insert ceramic structure all in one single appointment.At Trinity Orthodontics, we use advanced treatment plans and custom orthodontic care to provide patients with straight, beautiful smiles quickly and efficiently. Whether your misaligned teeth are causing serious TMJ issues, or you just want to be able to smile with confidence, our knowledgeable and experienced team would be happy to help. We genuinely care about our patients and want them to feel great about how their teeth look. If you are interested in learning more about our office, please don’t hesitate to contact your nearest Trinity Orthodontics location.",
+        "price": 39.99
+    }
+]

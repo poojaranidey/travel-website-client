@@ -1,0 +1,35 @@
+.heading{
+    font-weight: bold;
+    font-size: xx-large;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 5px;
+}
+.tag-p{
+    font-weight: bold;
+    font-size: xx-large;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding: 5px;
+    width:950px;
+}
+.welcome-details{
+    background-color: rgb(239, 248, 156);
+    border-radius: 20px;
+    }
+.accordition-items{
+    background-color: lightyellow;
+}
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    .heading,.tag-p{
+        display: none;
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+  
+     .heading.tag-p{
+       
+        display: none;
+    }
+}
