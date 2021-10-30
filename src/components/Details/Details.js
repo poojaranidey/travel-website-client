@@ -35,7 +35,7 @@ const Details = () => {
 
                 <h1> Book your travel {user.displayName}</h1>
                 <h2> Your email : {user.email}</h2>
-                <Link to={`/shipping/${services._id}`}>
+                <Link to={`/bookingservice/${services._id}`}>
                     <button className="btn btn-warning">
                         Place an order
                     </button>

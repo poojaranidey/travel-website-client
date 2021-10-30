@@ -64,15 +64,13 @@ const MyOrder = () => {
                                                 }
                                                 <div style={{ height: '150px' }} className="d-flex align-items-center justify-content-center w-100 border border-1">
                                                     <div className="d-flex align-items-center">
-                                                        <div className="w-50 h-100"><img className="w-75 h-100" src={order?.image} alt="" /></div>
+                                                        <div className="w-50 h-100"><img className="w-50 h-70" src={order?.image} alt="" /></div>
                                                         <div className="text-start">
 
-                                                            <h6 className="p-0 m-0">user name : {order?.name}</h6>
-                                                            <h6 className="p-0 m-0">
-                                                                order name:{order?.title}
-                                                            </h6>
-                                                            <p>email: {order?.email}</p>
-                                                            <Button variant="danger" onClick={() => deleteBtn(order._id)}>Cancel</Button>
+                                                            <h6 className="p-0 m-0">event name : {order?.name}</h6>
+                                                            <p>date : {order?.date || 'not given'}</p>
+                                                            <Button variant="warning" className="mx-2" >{order?.status}</Button>
+                                                            <Button variant="danger" className="mx-2" onClick={() => deleteBtn(order._id)}>Cancel</Button>
                                                         </div>
                                                     </div>
                                                 </div>

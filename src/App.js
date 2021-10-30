@@ -17,6 +17,7 @@ import MyOrder from './components/MyOrder/MyOrder';
 
 import Admin from './components/Admin/Admin';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import BookingService from './components/BookingService/BookingService';
 
 function App() {
   return (
@@ -48,8 +49,8 @@ function App() {
               <Route exact path="/addservice">
                 <AddService></AddService>
               </Route>
-              <PrivateRoute exact path="/shipping/:id">
-                <Shipping></Shipping>
+              <PrivateRoute exact path="/bookingservice/:id">
+                <BookingService></BookingService>
               </PrivateRoute>
 
               <Route exact path="/myorder">

@@ -7,7 +7,7 @@ import useAuth from '../../hooks/useAuth';
 
 const Admin = () => {
     const { user } = useAuth()
-
+    const [approve, setApprove] = useState(false)
     const [all, setAll] = useState([])
     const [allEvent, setAllEvent] = useState([])
 
@@ -15,7 +15,7 @@ const Admin = () => {
         fetch('http://localhost:5000/myorder')
             .then(res => res.json())
             .then(data => setAll(data))
-    }, [])
+    }, [approve])
 
     useEffect(() => {
         fetch('http://localhost:5000/services')
@@ -37,7 +37,22 @@ const Admin = () => {
                 }
             })
     }
-
+    const update = {
+        status: 'Approved'
+    }
+    const handleApproved = id => {
+        fetch(`http://localhost:5000/myorder/${id}`, {
+            method: 'PUT',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(update)
+        }).then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    alert('approved successfully')
+                    setApprove(true)
+                }
+            })
+    }
 
     const deleteEvent = id => {
         fetch(`http://localhost:5000/services/${id}`, {
@@ -67,11 +82,12 @@ const Admin = () => {
                         </Row>
                         {
                             all.map(a => <Row xs={3} md={5} className="g-4" key={a._id}>
-                                <p className="display text-center">{a.title}</p>
-                                <p className="text-center">{a.name}</p>
+
+                                <p className="display text-center">{a.name}</p>
+                                <p className="text-center">{a.displayName}</p>
                                 <p className="display text-center">{a.email}</p>
-                                <p className=" text-center">{a?.description}</p>
-                                <p className="text-center"><FaCheck className="mx-2" /><FaTrash onClick={() => deleteBtn(a._id)} className="mx-2" /></p>
+                                <p className=" text-center">{a?.status}</p>
+                                <p className="text-center"><FaCheck className="mx-2" onClick={() => handleApproved(a._id)} /><FaTrash onClick={() => deleteBtn(a._id)} className="mx-2" /></p>
                             </Row>)
                         }
                     </div>
