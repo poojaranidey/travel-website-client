@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
+import "./Header.css"
 
 import useFirebase from '../../hooks/useFirebase';
-
 
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
         <div>
             <Navbar sticky="top" bg="dark" variant="dark" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">Dental Clinic</Navbar.Brand>
+                    <Navbar.Brand href="#home">Wanderers tour</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav >
@@ -24,14 +24,14 @@ const Header = () => {
                             <Nav.Link className="navlink" as={Link} to="/services">Services</Nav.Link>
                             {user?.email ? (
                                 <>
-                                    <NavLink className="nav-link" to="/insert-item">
-                                        Insert Item
+                                    <NavLink className="nav-link" to="/addservice">
+                                        Add a service
                                     </NavLink>
-                                    <NavLink className="nav-link" to="/my-orders">
-                                        My Orders
+                                    <NavLink className="nav-link" to="/myorder">
+                                        My-Orders
                                     </NavLink>
-                                    <NavLink className="nav-link" to="/manage-all-orders">
-                                        Manage All Orders
+                                    <NavLink className="nav-link" to="/manageservice">
+                                        Manage Services
                                     </NavLink>
                                     <NavLink className="nav-link" to="/profile">
                                         <small>
@@ -42,7 +42,7 @@ const Header = () => {
                                         </small>
                                     </NavLink>
                                     <NavLink className="nav-link" to="/profile">
-                                        <img src={user.photoURL} alt="" className="profile-img" />
+                                        <img src={user.photoURL} alt="" className="profile-img " />
                                     </NavLink>
                                     <Button className="btn btn-warning fw-bold" onClick={logOut}>Log Out</Button>
                                 </>

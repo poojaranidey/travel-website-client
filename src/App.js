@@ -11,7 +11,12 @@ import NotFound from './components/NotFound/NotFound';
 import Services from './components/Services/Services';
 import AddService from './components/AddService/AddService';
 import AuthProvider from './context/AuthProvider';
-import ManageServices from './components/ManageServices/ManageServices';
+
+import Shipping from './components/Shipping/Shipping';
+import MyOrder from './components/MyOrder/MyOrder';
+
+import Admin from './components/Admin/Admin';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -28,12 +33,12 @@ function App() {
                 <Home></Home>
               </Route>
 
-              <Route exact path="/service">
+              <PrivateRoute exact path="/services">
                 <Services></Services>
-              </Route>
-              <Route exact path="/details/:serviceId">
+              </PrivateRoute>
+              <PrivateRoute exact path="/details/:serviceId">
                 <Details></Details>
-              </Route>
+              </PrivateRoute>
               <Route exact path='/login'>
                 <Login></Login>
               </Route>
@@ -43,8 +48,16 @@ function App() {
               <Route exact path="/addservice">
                 <AddService></AddService>
               </Route>
+              <PrivateRoute exact path="/shipping/:id">
+                <Shipping></Shipping>
+              </PrivateRoute>
+
+              <Route exact path="/myorder">
+                <MyOrder></MyOrder>
+              </Route>
+
               <Route exact path="/manageservice">
-                <ManageServices></ManageServices>
+                <Admin></Admin>
               </Route>
 
               <Route exact path="*">

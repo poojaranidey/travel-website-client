@@ -25,7 +25,7 @@ const Home = () => {
                         <img
                             style={{ height: '93vh', objectFit: 'cover' }}
                             className="d-block w-100"
-                            src="https://image.freepik.com/free-photo/young-guy-with-backpack-traveler-standing-cliff_104033-31.jpg"
+                            src="https://image.freepik.com/free-photo/taking-path-mountains_1098-12856.jpg"
                             alt="Second slide"
                         />
 
