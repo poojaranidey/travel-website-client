@@ -12,7 +12,7 @@ import Services from './components/Services/Services';
 import AddService from './components/AddService/AddService';
 import AuthProvider from './context/AuthProvider';
 
-import Shipping from './components/Shipping/Shipping';
+
 import MyOrder from './components/MyOrder/MyOrder';
 
 import Admin from './components/Admin/Admin';

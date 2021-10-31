@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, ButtonGroup, Carousel, Container } from 'react-bootstrap';
+import { Accordion, Carousel, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Services from '../Services/Services';
 import "./Home.css"
@@ -88,30 +88,30 @@ const Home = () => {
                         <div className="col-lg-6 ">
                             <Accordion >
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header>Responsible for the beautiful pearly white smiles.</Accordion.Header>
+                                    <Accordion.Header>
+                                        We are building a bigger community of responsible travellers </Accordion.Header>
                                     <Accordion.Body>
-                                        Our goal is to provide our patients with the best possible dental care in an environment of comfort and compassion.
+                                        We are building a bigger community of responsible travellers by providing information on responsible travel throughout our website and online magazine, Days to Come.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>
-                                        Works with dentist to meet the oral health needs of patients.</Accordion.Header>
+                                        To make it easy for travellers to tour responsibly</Accordion.Header>
                                     <Accordion.Body>
-                                        Our wisdom teeth are the third and final set of molars located at the upper and lower back of our mouth. If you are experiencing pain from
+                                        We are showcasing how operators incorporate sustainability into their tours, so you know exactly what impact your trip can have.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
                                     <Accordion.Header>
-                                        Maintains and improves people’s oral health and quality of life.</Accordion.Header>
+                                        To connect people to life-enriching travel experiences</Accordion.Header>
                                     <Accordion.Body>
-                                        There are many reasons why you might lose a tooth: from poor dental care, to illness, lifestyle choices, or injury to your teeth.
+                                        ourRadar has been built on the guiding belief that travel has the ability to not only enrich our lives but the lives of all living things around us. We believe that travel is a superpower
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
-                                    <Accordion.Header>You Need to Know About Wisdom Teeth </Accordion.Header>
+                                    <Accordion.Header>You Need to Know About Journeys Are Best Measured In New Friends </Accordion.Header>
                                     <Accordion.Body>
-                                        Has an exceptional organizational and leadership skills. pearly white smiles.
-                                        Works with dentist to meet the oral health needs of patients.
+                                        We always have and always will strive to connect people to life-enriching travel experiences, and that means playing our part in protecting the planet.
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>

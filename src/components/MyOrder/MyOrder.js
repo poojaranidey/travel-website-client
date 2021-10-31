@@ -1,25 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
-import { useParams } from 'react-router';
+
 import useAuth from '../../hooks/useAuth';
 
 
 const MyOrder = () => {
     const { user } = useAuth()
     const mail = user.email;
-    const { id } = useParams();
 
-    const [services, setServices] = useState([])
+
+
 
     const [myOrder, setMyOrder] = useState([])
-    const { name } = services;
 
-    useEffect(() => {
-        fetch(`http://localhost:5000/services/${id}`)
-            .then(res => res.json())
-            .then((data) => setServices(data)
-            )
-    }, []);
+
+
 
 
     useEffect(() => {

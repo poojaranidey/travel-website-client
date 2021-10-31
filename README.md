@@ -1,6 +1,6 @@
 # TOUR THE WORLD (WANDERERS) WEBSITE
 
-## MY WEBSIT LINK :[()]
+## MY WEBSITE LINK :[()]
 
 ### Five Things About my Women Donate Website :
 

@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 
 const Details = () => {
 
-    const { user, logOut } = useFirebase();
+    const { user } = useFirebase();
 
 
     const { serviceId } = useParams();
-    console.log(serviceId);
+
     const [services, setServices] = useState([])
     useEffect(() => {
         fetch('http://localhost:5000/services')
