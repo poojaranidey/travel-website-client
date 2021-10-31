@@ -20,7 +20,7 @@ const BookingService = () => {
     const { name, image, description, location } = service;
     const { email, displayName } = user;
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://scary-wizard-02267.herokuapp.com/services/${id}`)
             .then((res) => res.json())
             .then((data) => setService(data));
     }, []);
@@ -36,7 +36,7 @@ const BookingService = () => {
             }
             const status = "pending";
             const bookingItem = { ...data, name, image, status };
-            fetch("http://localhost:5000/myorder", {
+            fetch("https://scary-wizard-02267.herokuapp.com/myorder", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

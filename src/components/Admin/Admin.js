@@ -12,20 +12,20 @@ const Admin = () => {
     const [allEvent, setAllEvent] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/myorder')
+        fetch('https://scary-wizard-02267.herokuapp.com/myorder')
             .then(res => res.json())
             .then(data => setAll(data))
     }, [approve])
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://scary-wizard-02267.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setAllEvent(data))
     }, [])
 
 
     const deleteBtn = id => {
-        fetch(`http://localhost:5000/myorder/${id}`, {
+        fetch(`https://scary-wizard-02267.herokuapp.com/myorder/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
@@ -41,7 +41,7 @@ const Admin = () => {
         status: 'Approved'
     }
     const handleApproved = id => {
-        fetch(`http://localhost:5000/myorder/${id}`, {
+        fetch(`https://scary-wizard-02267.herokuapp.com/myorder/${id}`, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(update)
@@ -55,7 +55,7 @@ const Admin = () => {
     }
 
     const deleteEvent = id => {
-        fetch(`http://localhost:5000/services/${id}`, {
+        fetch(`https://scary-wizard-02267.herokuapp.com/services/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

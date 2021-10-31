@@ -18,7 +18,7 @@ const MyOrder = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/myorder')
+        fetch('https://scary-wizard-02267.herokuapp.com/myorder')
             .then(res => res.json())
             .then(data => {
                 const onlyMine = data.filter(mine => mine.email === mail)
@@ -29,7 +29,7 @@ const MyOrder = () => {
 
 
     const deleteBtn = id => {
-        fetch(`http://localhost:5000/myorder/${id}`, {
+        fetch(`https://scary-wizard-02267.herokuapp.com/myorder/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
