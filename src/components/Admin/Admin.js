@@ -3,6 +3,7 @@ import { Container, Row, Table } from 'react-bootstrap';
 
 import { FaCheck, FaTrash } from "react-icons/fa";
 import useAuth from '../../hooks/useAuth';
+import "./Admin.css";
 
 
 const Admin = () => {
@@ -49,7 +50,7 @@ const Admin = () => {
             .then(data => {
                 if (data.modifiedCount > 0) {
                     alert('approved successfully')
-                    setApprove(true)
+                    setApprove(!approve)
                 }
             })
     }
@@ -68,24 +69,24 @@ const Admin = () => {
             })
     }
     return (
-        <div>
+        <div className="col-12 col-md-12">
             {
                 user.email && <Container>
-                    <div>
+                    <div >
                         <h3 className="text-center py-5">Traveller Management</h3>
                         <Row xs={3} md={5} className="g-4">
-                            <p className="display text-center">Event</p>
+                            <p className="display text-center event">Event</p>
                             <p className="text-center">Traveller</p>
-                            <p className="display text-center">Email</p>
+                            <p className="display text-center event">Email</p>
                             <p className=" text-center">Status</p>
                             <p className="text-center">Action</p>
                         </Row>
                         {
                             all.map(a => <Row xs={3} md={5} className="g-4" key={a._id}>
 
-                                <p className="display text-center">{a.name}</p>
-                                <p className="text-center">{a.displayName}</p>
-                                <p className="display text-center">{a.email}</p>
+                                <p className="event display text-center">{a.name}</p>
+                                <p className=" text-center">{a.displayName}</p>
+                                <p className="event display text-center">{a.email}</p>
                                 <p className=" text-center">{a?.status}</p>
                                 <p className="text-center"><FaCheck className="mx-2" onClick={() => handleApproved(a._id)} /><FaTrash onClick={() => deleteBtn(a._id)} className="mx-2" /></p>
                             </Row>)
