@@ -97,7 +97,7 @@ const Home = () => {
                                     <Accordion.Header>
                                         Works with dentist to meet the oral health needs of patients.</Accordion.Header>
                                     <Accordion.Body>
-                                        Our wisdom teeth are the third and final set of molars, located at the upper and lower back of our mouth. If you are experiencing pain from
+                                        Our wisdom teeth are the third and final set of molars located at the upper and lower back of our mouth. If you are experiencing pain from
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
